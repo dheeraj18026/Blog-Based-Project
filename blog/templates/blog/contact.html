@@ -1,0 +1,39 @@
+{% extends 'blog/base.html' %}
+{% load static %}
+{% block content %}
+
+<div class="col-sm-10 ">
+    <h3 class="text-white my-5">Contact Page</h3>
+
+    <form >
+        <div class="form-row mb-2">
+            <div class="form-group col-md-5 ">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" class="form-control my-1">
+            </div>
+
+            <div class="form-group col-md-5  ">
+                <label for="email">Your Email-id *</label>
+                <input type="email" id="email" class="form-control my-1" required >
+            </div>    
+        </div>
+
+        <div class="form-group mb-2">
+            <label for="subject" >Your Subject *</label>
+            <input type="text" class="form-control my-1" id="subject" required >
+        </div>
+
+        <div class="mb-3">
+            <label for="inputTextArea">Your Massage *</label>
+            <textarea  id="inputTextArea" class="form-control my-1" required></textarea>
+        </div>
+        
+        <button class="btn btn-primary" type="Submit">Submit</button>
+        
+    </form>
+
+</div>
+    
+    
+
+{% endblock content %}

@@ -1,0 +1,15 @@
+{% extends 'blog/base.html' %}
+{% load static %}
+{% block content %}
+<h1>Add New Post</h1>
+{% if messages %}
+    {% for message in messages %}
+    <p {% if message.tags %} class="alert alert-{{message.tags}}" {% endif %}>{{message}}</p>
+    {% endfor %}
+{% endif %}
+<form action="" method='POST' novalidate> {% csrf_token %}
+    {{form.as_p}}
+    <input type="submit" class='btn btn-success' value="Add">
+    <a href=" {% url 'dashboard' %} " class='btn btn-danger'>Cancel</a>
+</form>
+{% endblock content %}

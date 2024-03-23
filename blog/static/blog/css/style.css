@@ -1,0 +1,17 @@
+body {
+    background-color: rgb(44,45,45);
+    color: antiquewhite;
+}
+
+.jumbo-color {
+    background-color: rgb(83, 81, 81);
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-control{
+    background-color: rgb(177, 168, 168);
+}
